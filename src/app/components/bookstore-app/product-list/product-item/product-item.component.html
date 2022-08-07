@@ -1,0 +1,29 @@
+<div class="card shadow-sm" style="width: 18rem">
+  <div class="card-head" style="height: 12rem">
+    <img
+      src="{{ livro.image }}"
+      class="bd-placeholder-img card-img-top"
+      alt="..."
+      style="
+        height: 100%;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    />
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title" style="display: block; text-align: center; height: 2.5rem; font-size: 0.833rem; font-weight: 500;">{{ livro.name }}</h5>
+    <p class="card-text" style="display: block; text-align: center;">{{ livro.category }}</p>
+    <p class="card-text" style="display: block; text-align: center;">{{ livro.author }}</p>
+    <p class="card-text" style="display: block; text-align: center;">{{ livro.price*5.21 | currency: "BRL" }}</p>
+    <div class="bttn-group" style="display: block; text-align: center;">
+      <button type="button" class="btn btn-sm btn-success">Comprar</button>
+      <button type="button" class="btn btn-sm btn-outline-primary">
+        Detalhes
+      </button>
+    </div>
+  </div>
+</div>

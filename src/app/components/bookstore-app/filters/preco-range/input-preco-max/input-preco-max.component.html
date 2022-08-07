@@ -1,0 +1,18 @@
+<div class="form-floating">
+    <input
+      type="text"
+      class="form-control"
+      id="filtroPrecoMax"
+      [prefix]="prefix"
+      mask="0000.00"
+      [(ngModel)]="priceMaxService.priceMax"
+      name="priceMax"
+      [showMaskTyped]="true"
+      thousandSeparator="."
+      decimalMarker=","
+      placeHolderCharacter="0"
+      autocomplete="off"
+    />
+    <label for="filtroPrecoMax">Até:</label>
+  </div>
+  

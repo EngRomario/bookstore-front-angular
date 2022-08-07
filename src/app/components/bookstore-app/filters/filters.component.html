@@ -1,0 +1,15 @@
+<div class="card" style="width: 280px; height: auto">
+  <h5 class="card-header" style="text-align: center">Filtros</h5>
+  <div
+    class="card-body d-flex flex-column align-items-center justify-content-center" style="padding: 0;"
+  >
+    <accordion [isAnimated]="true">
+      <accordion-group heading="Preço">
+        <app-preco-range></app-preco-range>
+      </accordion-group>
+      <accordion-group heading="Categoria">
+        <app-category></app-category>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>

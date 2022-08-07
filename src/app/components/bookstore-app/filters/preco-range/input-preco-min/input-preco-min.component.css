@@ -1,0 +1,13 @@
+input[type=text] {
+    caret-color: transparent;
+}
+
+::selection {
+    color: black;
+    background: transparent;
+}
+
+
+input[type=text] {
+    caret-color: transparent;
+}

@@ -1,0 +1,20 @@
+<form>
+    <div class="form-floating">
+      <input
+        type="text"
+        class="form-control"
+        id="filtroPrecoMin"
+        [prefix]="prefix"
+        mask="0000.00"
+        [(ngModel)]="priceMin"
+        name="precoMin"
+        [showMaskTyped]="true"
+        thousandSeparator="."
+        decimalMarker=","
+        placeHolderCharacter="0"
+        autocomplete="off"
+      />
+      <label for="filtroPrecoMin">De:</label>
+    </div>
+  </form>
+  

@@ -1,0 +1,27 @@
+accordion {
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: transparent;
+}
+
+accordion-group ::ng-deep div >
+ div.panel-heading.card-header.panel-enabled {
+	 background-color: transparent;
+     
+}
+ accordion-group ::ng-deep div >
+ div.panel-heading.card-header.panel-enabled .btn-link {
+	 color: #060a09;
+     text-decoration: none;
+     font-size: 1.25rem;
+     font-weight:500;
+     border: none;
+}
+ accordion-group ::ng-deep div >
+ div.panel-collapse.collapse.in.show >
+ div {
+	 background-color:transparent;
+     border: none;
+}
