@@ -13,13 +13,11 @@ export class FiltersComponent implements OnInit {
     const precoMaxElement = $('#filtroPrecoMax') as HTMLInputElement;
 
     precoMaxElement.addEventListener('blur', () => {
-      (<HTMLButtonElement>$('#filtro-btn')).disabled = false;
       if (
         parseFloat(precoMinElement.value.slice(2)) >
         parseFloat(precoMaxElement.value.slice(2))
       ) {
-        alert('Preço Máximo menor que preço Mínimo');
-        (<HTMLButtonElement>$('#filtro-btn')).disabled = true;
+        alert('Preço Máximo menor que Preço Mínimo');
       }
     });
   }
